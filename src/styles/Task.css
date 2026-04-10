@@ -1,0 +1,120 @@
+/* ========== INPUT ========== */
+
+.task-input {
+  display: flex;
+  gap: 10px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 12px 14px;
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  background: var(--card);
+  color: var(--text);
+
+  font-size: 14px;
+
+  transition: all 0.2s ease;
+}
+
+.task-input input:focus {
+  outline: none;
+
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+}
+
+.task-input button {
+  padding: 12px 14px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: var(--primary);
+  color: white;
+
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.task-input button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+/* ========== TASK ITEM ========== */
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: var(--card);
+
+  padding: 14px 16px;
+
+  border-radius: 12px;
+  border: 1px solid var(--border);
+
+  transition: all 0.2s ease;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+/* ========== TEXT ========== */
+
+.task-text {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  opacity: 0.35;
+}
+
+/* ========== BUTTON ========== */
+
+.task-item button {
+  background: transparent;
+
+  border: 1px solid #ef4444;
+  color: #ef4444;
+
+  padding: 6px 10px;
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.task-item button:hover {
+  background: #ef4444;
+  color: white;
+
+  transform: scale(1.05);
+}
+
+/* ========== EMPTY STATE ========== */
+
+.empty {
+  text-align: center;
+  color: var(--muted);
+
+  margin-top: 20px;
+  font-size: 14px;
+}
